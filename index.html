@@ -1,211 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <title>Karan Rohra's Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Rohra - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="bg-dark">
-
-    <div class="container-fluid bg-danger">
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingScreen">
+        <div class="loader"></div>
     </div>
-    <div class="container mt-5">
-        <!-- Intro Secion -->
-        <div class="row">
-            <div class="col-md-9 mt-5 offset-md-0 order-md-1 order-2">
-                <h1 class="display-1 text-primary text-decoration-underline">My name is Karan Rohra</h1>
-                <h3 class="text-secondary">I am second year student at VESIT, i love to learn new technologies, i upgrade myself on the basis of needs and new technologies to save time while development.</h3>
-                <h2 class="text-success text-decoration-underline">  Philosophy: DO HARD THINGS TO ACHIEVE GREAT THINGS.</h2>
-            </div>
-            <div class="col-md-3 mt-5 offset-md-0 offset-2 order-md-2 order-1">
-                <img src="images/karan.jpg" alt="" width="244px" height="244px" class="border border-5 border-primary rounded-pill img-thumbnail">
+
+    <!-- Mouse Trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Karan Rohra</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1 class="text-reveal" data-text="Karan Rohra">Karan Rohra</h1>
+            <p class="subtitle typing-effect"></p>
+            <p class="description fade-in">
+                Software Engineer with 2+ years of experience specializing in full-stack development using Spring Boot and ReactJS. 
+                Passionate about building scalable enterprise applications and delivering innovative solutions.
+            </p>
+            <div class="cta-buttons fade-in">
+                <a href="#contact" class="btn btn-primary enhanced-hover">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary enhanced-hover">View Projects</a>
             </div>
         </div>
-        <hr class="border">
-        <!-- Eduction Secion -->
-        <div class="row">
-            <h1 class="text-warning display-3 text-center">Education</h1>
-            <div class="col-12 border">
-                <h2 class="text-primary">Vivekanand Education Society's Institute Of Technology</h2>
-                <div class="text-white">
-                    <h3>Mumbai Chembur</h3>
-                    <h4>August 2019 - 2023</h4>
-                    <h4>Computer Engineering</h4>
-                    <h4 class="float-end">CGPA: 7.99</h4>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title bounce-in">About Me</h2>
+            <div class="about-content">
+                <div class="stats stagger-container">
+                    <div class="stat-item floating fade-in enhanced-hover">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item floating fade-in enhanced-hover">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Code Reviews</div>
+                    </div>
+                    <div class="stat-item floating fade-in enhanced-hover">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">Query Resolution</div>
+                    </div>
+                    <div class="stat-item floating fade-in enhanced-hover">
+                        <div class="stat-number">20%</div>
+                        <div class="stat-label">Efficiency Boost</div>
+                    </div>
+                </div>
+                <div class="about-text slide-right">
+                    <p>
+                        I'm a passionate Full Stack Developer based in Mumbai with a strong foundation in modern web technologies. 
+                        My expertise spans across Java, JavaScript, Python, and cutting-edge frameworks like Spring Boot, ReactJS, and NextJS.
+                    </p>
+                    <p>
+                        At MAQ Software, I've been instrumental in designing microservices architectures, leading migrations from legacy systems, 
+                        and implementing AI-driven solutions that significantly improve operational efficiency. I thrive in agile environments 
+                        and enjoy mentoring team members while delivering high-quality code.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me solving algorithmic challenges on LeetCode, where I've achieved a top 10% ranking, 
+                        or exploring new technologies to stay at the forefront of software development.
+                    </p>
                 </div>
             </div>
-            <div class="col-12 border mt-4">
-                <h2 class="text-primary">Ramchand Kimatram Talreja College Of Arts, Science & Commerce</h2>
-                <div class="text-white">
-                    <h3>Ulhasnagar, Thane</h3>
-                    <h4>July 2017 - March 2019</h4>
-                    <h4>HSC Science</h4>
-                    <h4 class="text-end">Cleared with 65.85%</h4>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title rotate-in">Technical Skills</h2>
+            <div class="skills-grid stagger-container">
+                <div class="skill-category scale-in enhanced-hover">
+                    <h3>Languages & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 border mt-4">
-                <div class="text-white">
-                    <h2 class="text-primary">St. Joseph's Bethany Convent High School, Ulhasnagar</h2>
-                    <div class="text-white">
-                        <h3>Ulhasnagar, Thane</h3>
-                        <h4>June 2003 - April 2017</h4>
-                        <h4>SSC</h4>
-                        <h4 class="float-end">Cleared with 71.20%</h4>
+                <div class="skill-category scale-in enhanced-hover">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NextJS</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Material UI</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category scale-in enhanced-hover">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="skill-category scale-in enhanced-hover">
+                    <h3>Architecture & Methodologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">CQRS</span>
+                        <span class="skill-tag">C4 Model</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">System Design</span>
                     </div>
                 </div>
             </div>
-            
         </div>
-        <hr class="border">
-        <!--Experience Secion-->
-        <div class="row">
-            <h1 class="text-warning text-center display-3">Experience</h1>
-            <div class="col-12 border">
-                <h2 class="text-primary">Backend Developer</h2>
-                <div class="text-white">
-                    <h3>At Enerlly.com</h3>
-                    <h4>April 2021 - June 2021</h4>
-                    <h6>Company works on Electricity consumption of Big Tech Companies Tasks</h6>
-                    <h5>
-                        <ul>
-                            <li>I work on daily task and resolve issues</li>
-                            <li>I have worked on task that are based on Django and Python</li>
-                            <li>In this internship i have learn about how IT industry works</li>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Professional Experience</h2>
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Engineer</h3>
+                        <p class="company">MAQ Software • Mumbai</p>
+                    </div>
+                    <div class="duration">Jul 2023 – Present</div>
+                </div>
+                <ul class="achievements">
+                    <li>Designed a C4 architecture model for microservices-based system built on CQRS with MongoDB</li>
+                    <li>Developed React-based frontend, Spring Boot 3 backend, and C# minimal APIs for Billing and Reporting</li>
+                    <li>Integrated AI agent to handle client queries, resolving up to 80% of routine inquiries automatically</li>
+                    <li>Led migration of legacy C# ASPX application to Spring Boot and Next.js, covering 40+ pages over 9 months</li>
+                    <li>Built config-driven system for generating frontend components, boosting rollout efficiency by 20%</li>
+                    <li>Mentored team members through 50+ PR reviews, maintaining high code quality standards</li>
+                    <li>Recognized with Rising Star of the Quarter for high-impact contributions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title slide-left">Featured Projects</h2>
+            <div class="projects-grid stagger-container">
+                <div class="project-card bounce-in enhanced-hover">
+                    <div class="project-header">
+                        <h3>Finance Tracker</h3>
+                        <p class="project-tech">Spring Boot • React • PostgreSQL • Azure</p>
+                    </div>
+                    <div class="project-content">
+                        <ul class="project-features">
+                            <li>Full-Stack Finance Tracker with seamless user experience</li>
+                            <li>Automated transaction processing via Gmail API and Gemini AI</li>
+                            <li>AI-Powered chatbot for real-time finance insights</li>
+                            <li>Secure Google Auth integration</li>
+                            <li>Reduced manual tracking efforts by 60%</li>
                         </ul>
-                    </h5>
-                </div>
-            </div>
-        </div>
-        <hr class="border">
-        <!--Project Secion-->
-        <div class="row">
-            <h1 class="text-warning text-center display-3">Projects</h1>
-            <div class="col-12 mt-4 border">
-                <h2> <a target="_blank" href="https://khatarecord.herokuapp.com">BillPay or Khata Record App</a> </h2>
-                <h4 class="text-white">18th April 2021 - 27th April 2021</h4>
-                <h5 class="text-white">
-                    <ul>
-                        <li>Backend of this project is based on Python and Django. Html, CSS, Bootstrap used as frontend. SQlite as Database.</li>
-                        <li>This app notify the biller to pay bill so that user can maintain their bills in proper manner.</li>
-                        <li>This app is deployed on Heroku.</li>
-                    </ul>
-                </h5>
-            </div>
-            <div class="col-12 mt-4 border">
-                <h2> <a target="_blank" href="https://github.com/KaranRohra/Diamond-UPI">Bank Management System</a> </h2>
-                <h4 class="text-white">6th April 2021 - 11th April 2021</h4>
-                <h5 class="text-white">
-                    <ul>
-                        <li>Technology used in this project are Django and Python as Backend. Html, Css, JS for frontend. SQlite as Database.</li>
-                        <li>Feature of the app is to send money between users.</li>
-                        <li>User can also maintain their transaction history in proper manner.</li>
-                    </ul>
-                </h5>
-            </div>
-            <div class="col-12 mt-4 border">
-                <h2> <a target="_blank" href="https://github.com/KaranRohra/Attendance-Manager-App">Attendance Management System.</a> </h2>
-                <h4 class="text-white">1st December 2020 - 10th December 2020</h4>
-                <h5 class="text-white">
-                    <ul>
-                        <li>This project based on Android, Kotlin, XML for frontend, SQLite as Database.</li>
-                        <li>This app helps the students to maintain their attendance.</li>
-                        <li>This app also tells you how many class you have attended or missed, and it also tells you whether you have to attend further classes or not.</li>
-                    </ul>
-                </h5>
-            </div>
-        </div>
-        <hr class="border">
-        <!--Skill Section-->
-        <div class="row">
-            <h1 class="text-warning text-center display-3">Skills</h1>
-            <div class="col-md-3 col-sm-4 col-5 offset-md-3 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-              <h1>Java</h1>
-            </div>
-            <div class="col-md-3 col-sm-4 col-5 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-              <h1>Python</h1>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-4 col-5 offset-md-3 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-            <h1>Django</h1>
-          </div>
-          <div class="col-md-3 col-sm-4 col-5 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-            <h1>Git</h1>
-          </div>
-      </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-4 col-5 offset-md-3 offset-sm-1 offset-4 mt-3  rounded-pill text-center text-primary bg-white">
-            <h1>Algorithms</h1>
-          </div>
-          <div class="col-md-3 col-sm-4 col-5 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-            <h1>SQL</h1>
-          </div>
-      </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-5 offset-md-3 offset-sm-1 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-              <h1>Data Structures</h1>
-            </div>
-            <div class="col-md-3 col-sm-4 col-5 offset-sm-1 mt-3 offset-4 mt-3 rounded-pill text-center text-primary bg-white">
-              <h1>Basic Bootstrap</h1>
-            </div>
-        </div>
-        <hr class="border">
-        <!--Links Secion-->
-        <div class="row">
-            <h1 class="text-warning text-center display-3">Links</h1>
-            <!--Leetcode-->
-            <div class="col-auto offset-lg-4 offset-sm-3 offset-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top border border-3 border-dark" src="images/leetcode.png" alt="leetcode">
-                    <div class="card-body">
-                        <h5 class="card-title">Leetcode</h5>
-                        <a class="btn btn-success" target="_blank" href="https://leetcode.com/rohrakaran38/">View Profile</a>
+                        <div class="project-links">
+                            <a href="https://github.com/KaranRohra/finance-tracker" target="_blank" class="project-link">Source Code →</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-             <!--HackerRank-->
-            <div class="col-auto offset-sm-1 offset-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top border border-3 border-dark" src="images/hackerrank.png" alt="hackerrank">
-                    <div class="card-body">
-                        <h5 class="card-title">Hacker Rank</h5>
-                        <a class="btn btn-success" target="_blank" href="https://www.hackerrank.com/KaranRohra38">View Profile</a>
+                <div class="project-card bounce-in enhanced-hover">
+                    <div class="project-header">
+                        <h3>Automated Algo Trading</h3>
+                        <p class="project-tech">Python • MongoDB • Heroku</p>
+                    </div>
+                    <div class="project-content">
+                        <ul class="project-features">
+                            <li>Python-based trading system using Zerodha Kite API</li>
+                            <li>Technical indicators: EMA, RSI, ADX for automated signals</li>
+                            <li>Multi-user trading across various scripts</li>
+                            <li>Scheduled runs at 8:55 AM IST on Heroku</li>
+                            <li>Robust data management with MongoDB</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/KaranRohra/ema-strategy-algo-trading" target="_blank" class="project-link">Source Code →</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mb-5">
-            <!--GeeksForGeeks-->
-            <div class="col-auto offset-lg-4 offset-sm-3 offset-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top border border-3 border-dark" src="images/gfg.png" style="width: 150px; height: 145px;" alt="GeeksForGeeks">
-                    <div class="card-body">
-                        <h6 class="card-title">GeeksForGeeks</h6>
-                        <a class="btn btn-success" target="_blank" href="https://auth.geeksforgeeks.org/user/rohrakaran38/practice/">View Profile</a>
-                    </div>
-                </div>
-            </div>
-            <!--Github-->
-            <div class="col-auto offset-sm-1 offset-4 mt-3">
-                <div class="card">
-                    <img class="card-img-top border border-3 border-dark" src="images/github.png" style="width: 145px; height: 145px;" alt="github">
-                    <div class="card-body">
-                        <h5 class="card-title">Github</h5>
-                        <a class="btn btn-success" target="_blank" href="https://github.com/KaranRohra/">View Profile</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </section>
 
-         <!--dummy data-->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem excepturi ipsum nam labore illum dolor cum porro doloribus, voluptatem quod ducimus error incidunt beatae eius quisquam alias aspernatur eveniet libero! Necessitatibus consectetur, quisquam nihil adipisci molestiae tenetur expedita quia eos quas natus exercitationem. Odit, suscipit. Officiis quisquam obcaecati, numquam corporis laudantium mollitia, possimus tempora itaque exercitationem tenetur quis, consequatur nam dolor minima saepe! Libero magni suscipit recusandae et cumque atque asperiores porro molestias ab mollitia ut laboriosam, maiores eum assumenda deleniti distinctio rem. Cupiditate harum ratione minus expedita. Odit maiores quod quos laboriosam, corporis eum perspiciatis recusandae sit? Possimus, cum?</p>
-    </div>
+    <!-- Education & Achievements -->
+    <section id="education" class="education-achievements">
+        <div class="container">
+            <h2 class="section-title fade-in">Education & Achievements</h2>
+            <div class="edu-achieve-grid">
+                <div class="edu-card fade-in">
+                    <h3>Computer Engineering</h3>
+                    <p><strong>Vivekanand Education Society's Institute of Technology</strong></p>
+                    <p>CGPA: 8.86 | Aug 2019 – Jun 2023</p>
+                    <p>Mumbai</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <h3>🏆 LeetCode Contest</h3>
+                    <p>Ranking: <strong>1796</strong> (Top 10% worldwide)</p>
+                    <p>Demonstrated exceptional problem-solving skills in competitive programming</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <h3>🥇 HackerRank Achievements</h3>
+                    <p><strong>6 Gold Badges</strong> and <strong>5 Certificates</strong></p>
+                    <p>Expertise across various programming domains</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <h3>⭐ Rising Star Award</h3>
+                    <p><strong>Rising Star of the Quarter</strong></p>
+                    <p>Recognized for high-impact contributions at MAQ Software</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title fade-in">Let's Connect</h2>
+                <p class="fade-in">I'm always interested in hearing about new opportunities and connecting with fellow developers.</p>
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <h4>📧 Email</h4>
+                        <a href="mailto:rohrakaran38@gmail.com">rohrakaran38@gmail.com</a>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <h4>📱 Phone</h4>
+                        <a href="tel:+918830372262">+91 8830372262</a>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <h4>💼 LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/rohrakaran/" target="_blank">Connect with me</a>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <h4>💻 GitHub</h4>
+                        <a href="https://github.com/KaranRohra?tab=repositories" target="_blank">View my repositories</a>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <h4>🏆 LeetCode</h4>
+                        <a href="https://leetcode.com/u/KaranRohra2622730388/" target="_blank">Top 10% Ranking</a>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <h4>🥇 HackerRank</h4>
+                        <a href="https://www.hackerrank.com/profile/KaranRohra38" target="_blank">6 Gold Badges</a>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <a href="mailto:rohrakaran38@gmail.com" class="btn btn-primary">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Karan Rohra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
